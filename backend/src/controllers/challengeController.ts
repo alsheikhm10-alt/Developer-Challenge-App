@@ -8,6 +8,7 @@ export const getTodayChallenge = async (
   res: Response
 ): Promise<void> => {
   try {
+    void req;
     const today = getTodayDate();
     const challenge = await Challenge.findOne({
       date: {
