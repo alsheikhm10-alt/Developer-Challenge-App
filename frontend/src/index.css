@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100 font-sans;
+}
+
+a {
+  @apply text-blue-400 hover:text-blue-300 transition-colors;
+}
+
+button {
+  @apply transition-all;
+}
+
+input,
+textarea,
+select {
+  @apply bg-gray-800 text-gray-100 border border-gray-700 rounded px-3 py-2;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none border-blue-500;
+}
